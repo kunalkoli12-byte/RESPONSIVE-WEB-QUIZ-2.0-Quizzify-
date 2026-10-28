@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Challenge your HTML and CSS knowledge with Quizzify." />
+  <title>Quizzify — HTML & CSS Challenge</title>
+  <link rel="stylesheet" href="./theme.css" />
+  <link rel="stylesheet" href="./quiz.css" />
+  <script src="./quiz.js" defer></script>
+</head>
+<body class="quiz-page">
+  <header class="topbar">
+    <a class="brand" href="./quiz.html" aria-label="Quizzify home"><span class="brand-mark" aria-hidden="true">Q</span><span>Quizzify</span></a>
+    <div class="topbar-actions">
+      <span class="user-greeting">Hi, <strong id="current-user-name">learner</strong></span>
+      <button class="btn btn-secondary logout-button" id="logout-button" type="button">Log out <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main class="quiz-main">
+    <section class="intro-row" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">YOUR NEXT LITTLE CHALLENGE</p>
+        <h1 id="page-title">HTML & CSS <span>Knowledge Check</span></h1>
+        <p class="intro-description">10 questions. Two core technologies. One step closer to stronger frontend skills.</p>
+      </div>
+      <div class="challenge-stats" aria-label="Quiz information"><span class="stat-icon" aria-hidden="true">✦</span><div><strong>10 questions</strong><small>About 5 minutes</small></div></div>
+    </section>
+
+    <section class="loading-state" id="loading-state" role="status" aria-live="polite">
+      <span class="loading-spinner" aria-hidden="true"></span>
+      <div><strong>Preparing your challenge</strong><p>Loading and checking the HTML and CSS question bank…</p></div>
+    </section>
+
+    <section class="load-error" id="load-error" hidden aria-labelledby="load-error-title">
+      <div class="error-icon" aria-hidden="true">!</div>
+      <div class="load-error-copy"><h2 id="load-error-title">We couldn’t load the questions</h2><p id="load-error-text">Check that questions.json is available and retry.</p></div>
+      <button class="btn btn-primary" id="retry-button" type="button">Retry loading</button>
+    </section>
+
+    <section class="quiz-panel" id="quiz-panel" aria-labelledby="question-text" hidden>
+      <div class="quiz-panel-header">
+        <div class="question-position"><span class="question-kicker">QUESTION</span><strong id="question-counter">01 <span>/ 10</span></strong></div>
+        <span id="topic-badge" class="topic-badge topic-html">HTML</span>
+      </div>
+      <div class="progress-track" role="progressbar" id="quiz-progress" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="question-content">
+        <p class="question-overline" id="difficulty-label">EASY QUESTION</p>
+        <h2 id="question-text" tabindex="-1">Loading your first question…</h2>
+        <p class="answer-instruction">Choose one answer to continue.</p>
+        <div class="answer-list" id="answer-list" role="radiogroup" aria-labelledby="question-text"></div>
+        <p class="inline-message" id="quiz-message" role="status" aria-live="polite"></p>
+      </div>
+      <div class="quiz-panel-footer">
+        <button class="btn btn-secondary" id="previous-button" type="button" disabled><span aria-hidden="true">←</span> Previous</button>
+        <p class="save-hint"><span aria-hidden="true">✓</span> Your answer is kept as you move</p>
+        <button class="btn btn-primary" id="next-button" type="button">Next question <span aria-hidden="true">→</span></button>
+        <button class="btn btn-primary" id="submit-button" type="button" hidden>Finish quiz <span aria-hidden="true">✓</span></button>
+      </div>
+    </section>
+
+    <section class="results-panel" id="results-panel" hidden aria-labelledby="results-title">
+      <div class="results-hero">
+        <span class="results-icon" aria-hidden="true">✦</span>
+        <p class="eyebrow">CHALLENGE COMPLETE</p>
+        <h2 id="results-title">Nice work, <span id="results-user-name">learner</span>!</h2>
+        <p class="muted">Every question is a chance to learn something new.</p>
+        <div class="score-summary">
+          <div class="score-ring" id="score-ring" role="img" aria-label="Score percentage"><div><strong id="score-value">0/10</strong><span id="score-percent">0%</span></div></div>
+          <div class="score-copy"><span class="score-label">YOUR SCORE</span><strong id="score-message">Keep building your skills</strong><p id="score-detail">You answered 0 out of 10 questions correctly.</p></div>
+        </div>
+      </div>
+      <div class="topic-results">
+        <article class="topic-result-card"><span class="topic-result-mark html-mark" aria-hidden="true">H</span><div><span>HTML correct</span><strong id="html-score">0 / 5</strong></div></article>
+        <article class="topic-result-card"><span class="topic-result-mark css-mark" aria-hidden="true">C</span><div><span>CSS correct</span><strong id="css-score">0 / 5</strong></div></article>
+      </div>
+      <div class="review-heading"><div><p class="eyebrow">LEARN FROM YOUR ANSWERS</p><h3>Answer review</h3></div><p class="muted">Your answer, the correct answer, and why.</p></div>
+      <div class="review-list" id="review-list"></div>
+      <div class="results-actions"><button class="btn btn-secondary" id="results-logout-button" type="button">Log out</button><button class="btn btn-primary" id="restart-button" type="button">Play again <span aria-hidden="true">↻</span></button></div>
+    </section>
+
+    <p class="page-note"><span aria-hidden="true">✦</span> Questions are picked randomly from a balanced HTML and CSS question bank.</p>
+  </main>
+  <footer class="quiz-footer"><span class="brand-mark footer-mark" aria-hidden="true">Q</span><span>Quizzify</span><span class="footer-divider" aria-hidden="true">·</span><span>Practice with purpose.</span></footer>
+</body>
+</html>

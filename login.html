@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sign in to Quizzify and test your HTML and CSS knowledge." />
+  <title>Quizzify — Sign in</title>
+  <link rel="stylesheet" href="./theme.css" />
+  <link rel="stylesheet" href="./login.css" />
+  <script src="./login.js" defer></script>
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="welcome-panel" aria-labelledby="welcome-title">
+      <a class="brand brand-light" href="./login.html" aria-label="Quizzify home">
+        <span class="brand-mark" aria-hidden="true">Q</span><span>Quizzify</span>
+      </a>
+      <div class="welcome-copy">
+        <p class="eyebrow welcome-eyebrow">LEARN · PRACTISE · IMPROVE</p>
+        <h1 id="welcome-title">Ready to test your web development skills?</h1>
+        <p class="welcome-description">Build confidence one question at a time. Take a quick challenge covering the HTML structure, semantic elements, forms, CSS layouts, selectors and responsive design.</p>
+        <div class="topic-pills" aria-label="Quiz topics">
+          <span><span class="pill-dot html-dot" aria-hidden="true"></span>HTML fundamentals</span>
+          <span><span class="pill-dot css-dot" aria-hidden="true"></span>CSS essentials</span>
+        </div>
+      </div>
+      <div class="welcome-footer"><span class="footer-spark" aria-hidden="true">✦</span> A small daily practice makes a big difference.</div>
+      <div class="decor decor-one" aria-hidden="true"></div>
+      <div class="decor decor-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="auth-panel" aria-labelledby="auth-heading">
+      <div class="auth-card">
+        <div class="auth-card-top">
+          <a class="brand brand-mobile" href="./login.html"><span class="brand-mark" aria-hidden="true">Q</span><span>Quizzify</span></a>
+          <p class="eyebrow">YOUR LEARNING SPACE</p>
+          <h2 id="auth-heading">Welcome back</h2>
+          <p id="auth-subheading" class="muted">Sign in to continue your learning journey.</p>
+        </div>
+
+        <div class="auth-tabs" role="tablist" aria-label="Account access">
+          <button class="auth-tab is-active" id="signin-tab" type="button" role="tab" aria-selected="true" aria-controls="auth-form" data-mode="signin">Sign in</button>
+          <button class="auth-tab" id="register-tab" type="button" role="tab" aria-selected="false" aria-controls="auth-form" data-mode="register">Create account</button>
+        </div>
+
+        <form id="auth-form" novalidate>
+          <div class="field" id="name-field" hidden>
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Kunal Sharma" minlength="2" />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <div class="label-row"><label for="password">Password</label><span class="field-hint" id="password-hint">Keep it private</span></div>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required />
+          </div>
+          <div class="field" id="confirm-field" hidden>
+            <label for="confirm-password">Confirm password</label>
+            <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Re-enter your password" />
+          </div>
+          <button class="btn btn-primary auth-submit" id="auth-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="privacy-note"><span aria-hidden="true">▣</span> Demo account data stays in this browser. No information is sent to a server.</p>
+        <p class="auth-switch-note" id="auth-switch-note">New to Quizzify? <button type="button" class="text-button" data-mode="register">Create an account</button></p>
+      </div>
+      <p class="page-footnote">Built for curious minds · HTML + CSS practice</p>
+    </section>
+  </main>
+</body>
+</html>

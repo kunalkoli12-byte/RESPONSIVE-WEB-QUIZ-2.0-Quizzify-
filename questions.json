@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "html-001",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which declaration tells the browser to use modern HTML standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<!DOCTYPE html>"
+      },
+      {
+        "id": "B",
+        "text": "<html version=\"5\">"
+      },
+      {
+        "id": "C",
+        "text": "<doctype version=\"html5\">"
+      },
+      {
+        "id": "D",
+        "text": "<meta standards=\"modern\">"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The HTML doctype declaration places the browser in standards mode; it is not an ordinary HTML element."
+  },
+  {
+    "id": "html-002",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which attribute on the html element identifies the primary language of a page?",
+    "options": [
+      {
+        "id": "A",
+        "text": "charset"
+      },
+      {
+        "id": "B",
+        "text": "lang"
+      },
+      {
+        "id": "C",
+        "text": "locale"
+      },
+      {
+        "id": "D",
+        "text": "language-code"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The lang attribute, for example lang=\"en\", identifies the language used by the document."
+  },
+  {
+    "id": "html-003",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Where should a page’s character encoding normally be declared?",
+    "options": [
+      {
+        "id": "A",
+        "text": "In a meta element inside head"
+      },
+      {
+        "id": "B",
+        "text": "In a paragraph at the top of body"
+      },
+      {
+        "id": "C",
+        "text": "As an attribute on every text element"
+      },
+      {
+        "id": "D",
+        "text": "Inside the closing html tag"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A meta element such as <meta charset=\"UTF-8\"> in the head declares the document character encoding."
+  },
+  {
+    "id": "html-004",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which element supplies the text commonly shown in a browser tab?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<header>"
+      },
+      {
+        "id": "B",
+        "text": "<caption>"
+      },
+      {
+        "id": "C",
+        "text": "<title>"
+      },
+      {
+        "id": "D",
+        "text": "<label>"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The title element in the document head provides the page title used by browser tabs and bookmarks."
+  },
+  {
+    "id": "html-005",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which semantic element is best suited to the dominant, unique content of a page?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<main>"
+      },
+      {
+        "id": "B",
+        "text": "<footer>"
+      },
+      {
+        "id": "C",
+        "text": "<aside>"
+      },
+      {
+        "id": "D",
+        "text": "<summary>"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The main element represents the dominant content of the body and normally appears only once per page."
+  },
+  {
+    "id": "html-006",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which element is intended to group major navigation links?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<menuitem>"
+      },
+      {
+        "id": "B",
+        "text": "<nav>"
+      },
+      {
+        "id": "C",
+        "text": "<address>"
+      },
+      {
+        "id": "D",
+        "text": "<article>"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The nav element marks a section whose purpose is to provide navigation links."
+  },
+  {
+    "id": "html-007",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "For an explicitly associated label, which value must match the input’s id?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The label’s name"
+      },
+      {
+        "id": "B",
+        "text": "The input’s value"
+      },
+      {
+        "id": "C",
+        "text": "The label’s class"
+      },
+      {
+        "id": "D",
+        "text": "The label’s for attribute"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The label for value must equal the associated input id, such as for=\"email\" with id=\"email\"."
+  },
+  {
+    "id": "html-008",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "How should an informative image provide a text alternative to assistive technology?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Put the description in href"
+      },
+      {
+        "id": "B",
+        "text": "Add a caption attribute to body"
+      },
+      {
+        "id": "C",
+        "text": "Use a meaningful alt attribute on img"
+      },
+      {
+        "id": "D",
+        "text": "Use placeholder on img"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A meaningful alt attribute communicates the important information conveyed by an informative image."
+  },
+  {
+    "id": "html-009",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which attribute defines the destination of a standard hyperlink?",
+    "options": [
+      {
+        "id": "A",
+        "text": "src"
+      },
+      {
+        "id": "B",
+        "text": "href"
+      },
+      {
+        "id": "C",
+        "text": "target"
+      },
+      {
+        "id": "D",
+        "text": "action"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The href attribute gives the URL or fragment destination for an anchor element."
+  },
+  {
+    "id": "html-010",
+    "topic": "HTML",
+    "difficulty": "Medium",
+    "question": "When an external link opens with target=\"_blank\", which rel values are a good explicit safety practice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "rel=\"nofollow\" only"
+      },
+      {
+        "id": "B",
+        "text": "rel=\"external\" only"
+      },
+      {
+        "id": "C",
+        "text": "rel=\"noopener noreferrer\""
+      },
+      {
+        "id": "D",
+        "text": "rel=\"parent\""
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "noopener prevents access to the opener window; noreferrer also suppresses referrer information."
+  },
+  {
+    "id": "html-011",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which form attribute identifies the URL that receives submitted form data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "action"
+      },
+      {
+        "id": "B",
+        "text": "method-name"
+      },
+      {
+        "id": "C",
+        "text": "for"
+      },
+      {
+        "id": "D",
+        "text": "accept"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The action attribute specifies the URL that processes a form submission."
+  },
+  {
+    "id": "html-012",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which input type gives browsers a semantic hint to validate an email address?",
+    "options": [
+      {
+        "id": "A",
+        "text": "text"
+      },
+      {
+        "id": "B",
+        "text": "mailbox"
+      },
+      {
+        "id": "C",
+        "text": "email"
+      },
+      {
+        "id": "D",
+        "text": "url-email"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "type=\"email\" enables email-oriented input behavior and built-in format validation in supporting browsers."
+  },
+  {
+    "id": "html-013",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which element provides a caption for a group of related form controls inside a fieldset?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<legend>"
+      },
+      {
+        "id": "B",
+        "text": "<summary>"
+      },
+      {
+        "id": "C",
+        "text": "<caption>"
+      },
+      {
+        "id": "D",
+        "text": "<labelset>"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The legend element labels a fieldset and helps users understand the purpose of the grouped controls."
+  },
+  {
+    "id": "html-014",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "Which element creates an unordered list of items?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<ol>"
+      },
+      {
+        "id": "B",
+        "text": "<dl>"
+      },
+      {
+        "id": "C",
+        "text": "<li>"
+      },
+      {
+        "id": "D",
+        "text": "<ul>"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The ul element represents a list where item order is not inherently meaningful; its items are generally li elements."
+  },
+  {
+    "id": "html-015",
+    "topic": "HTML",
+    "difficulty": "Medium",
+    "question": "In an HTML table, which element represents a header cell?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<thead-cell>"
+      },
+      {
+        "id": "B",
+        "text": "<th>"
+      },
+      {
+        "id": "C",
+        "text": "<td header>"
+      },
+      {
+        "id": "D",
+        "text": "<trh>"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The th element marks a header cell. Scope can clarify which rows or columns it describes."
+  },
+  {
+    "id": "html-016",
+    "topic": "HTML",
+    "difficulty": "Medium",
+    "question": "What does scope=\"col\" on a table header cell communicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The cell spans every column"
+      },
+      {
+        "id": "B",
+        "text": "The cell is hidden from screen readers"
+      },
+      {
+        "id": "C",
+        "text": "The header applies to cells in its column"
+      },
+      {
+        "id": "D",
+        "text": "The table should scroll horizontally"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "scope=\"col\" identifies a column header relationship for assistive technologies."
+  },
+  {
+    "id": "html-017",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "What is the default behavior of a button element inside a form when its type is omitted?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It resets the whole browser"
+      },
+      {
+        "id": "B",
+        "text": "It submits the form"
+      },
+      {
+        "id": "C",
+        "text": "It acts only as a link"
+      },
+      {
+        "id": "D",
+        "text": "It is disabled by default"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A button associated with a form defaults to submit behavior, so type=\"button\" should be set for non-submit actions."
+  },
+  {
+    "id": "html-018",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "question": "What does the required attribute on a supported form control do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It makes the field read-only"
+      },
+      {
+        "id": "B",
+        "text": "It gives the field a default value"
+      },
+      {
+        "id": "C",
+        "text": "It hides the field until clicked"
+      },
+      {
+        "id": "D",
+        "text": "It prevents submission while the field is empty"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The required attribute invokes browser constraint validation and blocks submission until a value is provided."
+  },
+  {
+    "id": "html-019",
+    "topic": "HTML",
+    "difficulty": "Medium",
+    "question": "Which element can provide predefined suggestions for an input without restricting users to those choices?",
+    "options": [
+      {
+        "id": "A",
+        "text": "<datalist>"
+      },
+      {
+        "id": "B",
+        "text": "<selectlist>"
+      },
+      {
+        "id": "C",
+        "text": "<optiongroup>"
+      },
+      {
+        "id": "D",
+        "text": "<suggestions>"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A datalist supplies suggestions to an input through its list attribute, while users may still enter other values."
+  },
+  {
+    "id": "html-020",
+    "topic": "HTML",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the defer attribute on a classic external script?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It runs the script before parsing begins"
+      },
+      {
+        "id": "B",
+        "text": "It repeats the script after every click"
+      },
+      {
+        "id": "C",
+        "text": "It downloads in parallel and runs after parsing, in document order"
+      },
+      {
+        "id": "D",
+        "text": "It converts the script to a module"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A deferred classic script downloads while HTML is parsed and executes after parsing, preserving order among deferred scripts."
+  },
+  {
+    "id": "css-001",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which selector targets every element with class=\"card\"?",
+    "options": [
+      {
+        "id": "A",
+        "text": "#card"
+      },
+      {
+        "id": "B",
+        "text": ".card"
+      },
+      {
+        "id": "C",
+        "text": "card()"
+      },
+      {
+        "id": "D",
+        "text": "*card"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A dot followed by a class name selects elements whose class list includes that name."
+  },
+  {
+    "id": "css-002",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "In the same origin and cascade layer, which selector generally has greater specificity?",
+    "options": [
+      {
+        "id": "A",
+        "text": ".notice"
+      },
+      {
+        "id": "B",
+        "text": "article"
+      },
+      {
+        "id": "C",
+        "text": "div.notice"
+      },
+      {
+        "id": "D",
+        "text": "The universal selector *"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "div.notice includes a class selector and an element selector, so it has greater specificity than a single class selector or element selector."
+  },
+  {
+    "id": "css-003",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "What does box-sizing: border-box change about an element’s declared width?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It excludes both padding and border from the width"
+      },
+      {
+        "id": "B",
+        "text": "It includes padding and border in the width"
+      },
+      {
+        "id": "C",
+        "text": "It forces the width to be 100%"
+      },
+      {
+        "id": "D",
+        "text": "It disables margins"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "With border-box, the declared width includes content, padding, and border; margins remain outside that width."
+  },
+  {
+    "id": "css-004",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which statement correctly distinguishes margin from padding?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Margin is outside the border; padding is between content and border"
+      },
+      {
+        "id": "B",
+        "text": "Margin is text spacing; padding is line spacing"
+      },
+      {
+        "id": "C",
+        "text": "Padding is outside the border; margin is inside it"
+      },
+      {
+        "id": "D",
+        "text": "They are aliases for the same property"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Margin controls space outside an element’s border, while padding controls space between the content and border."
+  },
+  {
+    "id": "css-005",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "In a flex container with flex-direction: row, what does align-items: center do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Centers items along the main horizontal axis"
+      },
+      {
+        "id": "B",
+        "text": "Centers text only"
+      },
+      {
+        "id": "C",
+        "text": "Centers items along the cross axis, usually vertically"
+      },
+      {
+        "id": "D",
+        "text": "Makes all items the same width"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "For a row flex container, the cross axis is vertical, so align-items: center aligns items vertically within the container."
+  },
+  {
+    "id": "css-006",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "In a row flex container, which property distributes items along the main axis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "align-content"
+      },
+      {
+        "id": "B",
+        "text": "justify-content"
+      },
+      {
+        "id": "C",
+        "text": "align-items"
+      },
+      {
+        "id": "D",
+        "text": "place-self"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "justify-content distributes flex items along the main axis, which is horizontal when flex-direction is row."
+  },
+  {
+    "id": "css-007",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "Which declaration creates a grid with three equal flexible columns?",
+    "options": [
+      {
+        "id": "A",
+        "text": "grid-template: 3 equal columns"
+      },
+      {
+        "id": "B",
+        "text": "grid-columns: repeat(3, 1fr)"
+      },
+      {
+        "id": "C",
+        "text": "grid-template-columns: repeat(3, 1fr)"
+      },
+      {
+        "id": "D",
+        "text": "display: columns(3)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "repeat(3, 1fr) defines three tracks that each take an equal share of the available grid space."
+  },
+  {
+    "id": "css-008",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "An element with position: fixed is normally positioned relative to which reference?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its previous sibling"
+      },
+      {
+        "id": "B",
+        "text": "The nearest flex item"
+      },
+      {
+        "id": "C",
+        "text": "Its own content box"
+      },
+      {
+        "id": "D",
+        "text": "The viewport"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "A fixed-position element is generally positioned relative to the viewport, though certain ancestor properties can establish a containing block."
+  },
+  {
+    "id": "css-009",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "An absolutely positioned element is usually positioned relative to what?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The nearest ancestor that establishes a containing block, often position: relative"
+      },
+      {
+        "id": "B",
+        "text": "The nearest element with display: block in every case"
+      },
+      {
+        "id": "C",
+        "text": "The browser tab title"
+      },
+      {
+        "id": "D",
+        "text": "The document’s first paragraph"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Absolute positioning uses its containing block, commonly established by a positioned ancestor such as one with position: relative."
+  },
+  {
+    "id": "css-010",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "Which statement about z-index is most accurate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It changes the document reading order"
+      },
+      {
+        "id": "B",
+        "text": "It always works identically across all stacking contexts"
+      },
+      {
+        "id": "C",
+        "text": "It controls stacking order within the applicable stacking context"
+      },
+      {
+        "id": "D",
+        "text": "It moves an element along the x-axis"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "z-index affects stacking order within stacking contexts; a child cannot escape its ancestor stacking context merely by using a very large value."
+  },
+  {
+    "id": "css-011",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "What is 1rem typically relative to?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The width of the viewport"
+      },
+      {
+        "id": "B",
+        "text": "The root element’s font size"
+      },
+      {
+        "id": "C",
+        "text": "The current element’s line-height"
+      },
+      {
+        "id": "D",
+        "text": "The parent element’s padding"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rem unit is based on the computed font size of the root element, usually html."
+  },
+  {
+    "id": "css-012",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "What is a common purpose of max-width on a content container?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To make the element ignore padding"
+      },
+      {
+        "id": "B",
+        "text": "To force horizontal scrolling on small screens"
+      },
+      {
+        "id": "C",
+        "text": "To set a fixed minimum height"
+      },
+      {
+        "id": "D",
+        "text": "To prevent the container from growing beyond a chosen width"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "max-width caps the element’s width while allowing it to shrink when available space is smaller."
+  },
+  {
+    "id": "css-013",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which CSS feature conditionally applies styles at specified viewport widths?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A media query"
+      },
+      {
+        "id": "B",
+        "text": "A keyframe selector"
+      },
+      {
+        "id": "C",
+        "text": "A pseudo-element"
+      },
+      {
+        "id": "D",
+        "text": "A CSS variable"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Media queries let a stylesheet apply rules only when conditions such as viewport width match."
+  },
+  {
+    "id": "css-014",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which pseudo-class applies while a pointing device is over an element?",
+    "options": [
+      {
+        "id": "A",
+        "text": "::before"
+      },
+      {
+        "id": "B",
+        "text": ":focus-visible"
+      },
+      {
+        "id": "C",
+        "text": ":hover"
+      },
+      {
+        "id": "D",
+        "text": "::selection"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The :hover pseudo-class matches an element while the user designates it with a pointing device, where supported."
+  },
+  {
+    "id": "css-015",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "Which selector creates a stylable generated box before an element’s content?",
+    "options": [
+      {
+        "id": "A",
+        "text": ":before-only"
+      },
+      {
+        "id": "B",
+        "text": "::before"
+      },
+      {
+        "id": "C",
+        "text": "::first"
+      },
+      {
+        "id": "D",
+        "text": "::prepend"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The ::before pseudo-element creates generated content before an element’s content; the content property is generally needed for it to appear."
+  },
+  {
+    "id": "css-016",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property primarily controls the vertical spacing between lines of text?",
+    "options": [
+      {
+        "id": "A",
+        "text": "letter-spacing"
+      },
+      {
+        "id": "B",
+        "text": "word-spacing"
+      },
+      {
+        "id": "C",
+        "text": "text-indent"
+      },
+      {
+        "id": "D",
+        "text": "line-height"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "line-height sets the height of a line box and is commonly used to tune text line spacing."
+  },
+  {
+    "id": "css-017",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which declaration creates a smooth transition from one background color to another across an element?",
+    "options": [
+      {
+        "id": "A",
+        "text": "background: linear-gradient(90deg, #000, #fff)"
+      },
+      {
+        "id": "B",
+        "text": "background-color: transition(black, white)"
+      },
+      {
+        "id": "C",
+        "text": "color: gradient(black, white)"
+      },
+      {
+        "id": "D",
+        "text": "background-image: keyframes(black, white)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "linear-gradient() creates an image with a smooth progression between color stops and can be used as a background."
+  },
+  {
+    "id": "css-018",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "What does transition: opacity 200ms ease; specify?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An animation that runs forever"
+      },
+      {
+        "id": "B",
+        "text": "A media condition for opacity"
+      },
+      {
+        "id": "C",
+        "text": "A 200-millisecond easing transition for changes to opacity"
+      },
+      {
+        "id": "D",
+        "text": "A delay before the page loads"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The shorthand sets the transitioned property, duration, and timing function for changes to opacity."
+  },
+  {
+    "id": "css-019",
+    "topic": "CSS",
+    "difficulty": "Medium",
+    "question": "Which at-rule defines named animation stages that can be referenced by the animation property?",
+    "options": [
+      {
+        "id": "A",
+        "text": "@supports"
+      },
+      {
+        "id": "B",
+        "text": "@layer"
+      },
+      {
+        "id": "C",
+        "text": "@media"
+      },
+      {
+        "id": "D",
+        "text": "@keyframes"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "@keyframes defines an animation’s stages, which can then be applied to an element with animation properties."
+  },
+  {
+    "id": "css-020",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property adds a shadow behind an element’s border box?",
+    "options": [
+      {
+        "id": "A",
+        "text": "text-shadow"
+      },
+      {
+        "id": "B",
+        "text": "box-shadow"
+      },
+      {
+        "id": "C",
+        "text": "filter-text"
+      },
+      {
+        "id": "D",
+        "text": "border-effect"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "box-shadow draws a shadow around an element’s box; text-shadow instead applies to glyphs in text."
+  }
+]
